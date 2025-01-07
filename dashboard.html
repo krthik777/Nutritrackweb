@@ -1,0 +1,1655 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+   </body>
+</html><htmlCode>
+<div id="root" class="bg-gray-100">
+    <div class="flex h-screen overflow-hidden">
+        <!-- Sidebar Navigation -->
+        <nav class="bg-white w-64 flex-shrink-0 border-r border-gray-200 hidden lg:flex lg:flex-col">
+            <div class="flex-1 flex flex-col pt-5 pb-4 overflow-y-hidden">
+                <div class="flex items-center flex-shrink-0 px-4 mb-5">
+                    <h1 class="text-xl font-bold text-gray-800">NutriTrack</h1>
+                </div>
+                <div class="flex-1 flex flex-col">
+                    <nav class="flex-1 space-y-1">
+                        <a href="#overview" class="flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-gray-100">
+                            <svg class="mr-3 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                            Overview
+                        </a>
+                        <a href="#calories" class="flex items-center px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">
+                            <svg class="mr-3 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                            Calories
+                        </a>
+                        <a href="#meals" class="flex items-center px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">
+                            <svg class="mr-3 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                            Meals
+                        </a>
+                        <a href="#nutrition" class="flex items-center px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">
+                            <svg class="mr-3 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                            Nutrition
+                        </a>
+                        <a href="#allergens" class="flex items-center px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">
+                            <svg class="mr-3 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            Allergens
+                        </a>
+                        <a href="#chat" class="flex items-center px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">
+                            <svg class="mr-3 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                            Chat
+                        </a>
+                    </nav>
+                </div>
+                <div class="flex-shrink-0 flex border-t border-gray-200 p-4">
+                    <div class="flex items-center">
+                        <div>
+                            <img class="inline-block h-9 w-9 rounded-full" src="https://placehold.co/400" alt="Profile">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-700 group-hover:text-gray-900">John Doe</p>
+                            <p class="text-xs font-medium text-gray-500 group-hover:text-gray-700">View Profile</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile menu -->
+        <div class="lg:hidden" x-data="{ isOpen: false }">
+            <button 
+                type="button" 
+                class="fixed top-4 right-4 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                @click="isOpen = !isOpen"
+                aria-controls="mobile-menu"
+                :aria-expanded="isOpen">
+                <span class="sr-only">Open main menu</span>
+                <svg class="block h-6 w-6" x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg class="h-6 w-6" x-show="isOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <div 
+                id="mobile-menu" 
+                x-show="isOpen"
+                x-transition:enter="transition ease-out duration-100 transform"
+                x-transition:enter-start="opacity-0 scale-95"
+                x-transition:enter-end="opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-75 transform"
+                x-transition:leave-start="opacity-100 scale-100"
+                x-transition:leave-end="opacity-0 scale-95"
+                class="fixed inset-0 z-50 lg:hidden"
+                role="dialog"
+                aria-modal="true">
+                <div class="fixed inset-0 bg-gray-600 bg-opacity-75"></div>
+                <div class="fixed inset-0 z-50 flex">
+                    <div class="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-white">
+                        <div class="absolute top-0 right-0 -mr-12 pt-2">
+                            <button 
+                                type="button" 
+                                class="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                                @click="isOpen = false">
+                                <span class="sr-only">Close sidebar</span>
+                                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- Mobile menu content -->
+                        <div class="flex-shrink-0 flex items-center px-4">
+                            <h1 class="text-xl font-bold text-gray-800">NutriTrack</h1>
+                        </div>
+                        <div class="mt-5 flex-1 h-0 overflow-y-auto">
+                            <nav class="px-2 space-y-1">
+                                <!-- Mobile menu items -->
+                                <a href="#overview" class="group flex items-center px-2 py-2 text-base font-medium rounded-md text-gray-900 bg-gray-100">Overview</a>
+                                <a href="#calories" class="group flex items-center px-2 py-2 text-base font-medium rounded-md text-gray-600 hover:bg-gray-50 hover:text-gray-900">Calories</a>
+                                <a href="#meals" class="group flex items-center px-2 py-2 text-base font-medium rounded-md text-gray-600 hover:bg-gray-50 hover:text-gray-900">Meals</a>
+                                <a href="#nutrition" class="group flex items-center px-2 py-2 text-base font-medium rounded-md text-gray-600 hover:bg-gray-50 hover:text-gray-900">Nutrition</a>
+                                <a href="#allergens" class="group flex items-center px-2 py-2 text-base font-medium rounded-md text-gray-600 hover:bg-gray-50 hover:text-gray-900">Allergens</a>
+                                <a href="#chat" class="group flex items-center px-2 py-2 text-base font-medium rounded-md text-gray-600 hover:bg-gray-50 hover:text-gray-900">Chat</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="flex-1 overflow-y-auto">
+            <div class="sticky top-0 z-10 flex-shrink-0 flex h-16 bg-white border-b border-gray-200">
+                <div class="flex-1 px-4 flex justify-between">
+                    <div class="flex-1 flex">
+                        <div class="flex w-full md:ml-0">
+                            <div class="w-full flex items-center">
+                                <label for="search" class="sr-only">Search</label>
+                                <div class="relative w-full text-gray-400 focus-within:text-gray-600">
+                                    <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none">
+                                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"/>
+                                        </svg>
+                                    </div>
+                                    <input id="search" class="block w-full h-full pl-8 pr-3 py-2 border-transparent text-gray-900 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-0 focus:border-transparent sm:text-sm" placeholder="Search" type="search">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-4 flex items-center md:ml-6">
+                        <button class="p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            <span class="sr-only">View notifications</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <MountPoint>
+
+<script>
+// Handle active state for navigation links
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('nav a');
+    
+    function setActiveLink() {
+        const hash = window.location.hash || '#overview';
+        navLinks.forEach(link => {
+            if(link.getAttribute('href') === hash) {
+                link.classList.add('bg-gray-100', 'text-gray-900');
+                link.classList.remove('text-gray-600');
+            } else {
+                link.classList.remove('bg-gray-100', 'text-gray-900');
+                link.classList.add('text-gray-600');
+            }
+        });
+    }
+
+    window.addEventListener('hashchange', setActiveLink);
+    setActiveLink();
+});
+
+// Handle smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+</htmlCode><htmlCode>
+<div id="overview" class="p-6 space-y-6">
+    <!-- Summary Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="p-4 bg-white border border-gray-200 rounded-lg">
+            <div class="flex items-center justify-between">
+                <h3 class="text-sm font-medium text-gray-500">Daily Calories</h3>
+                <svg class="h-8 w-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-semibold text-gray-900">1,842 / 2,000</p>
+            <p class="text-sm text-gray-500">kcal consumed today</p>
+        </div>
+
+        <div class="p-4 bg-white border border-gray-200 rounded-lg">
+            <div class="flex items-center justify-between">
+                <h3 class="text-sm font-medium text-gray-500">Meals Tracked</h3>
+                <svg class="h-8 w-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-semibold text-gray-900">4</p>
+            <p class="text-sm text-gray-500">meals today</p>
+        </div>
+
+        <div class="p-4 bg-white border border-gray-200 rounded-lg">
+            <div class="flex items-center justify-between">
+                <h3 class="text-sm font-medium text-gray-500">Protein Intake</h3>
+                <svg class="h-8 w-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-semibold text-gray-900">82g / 120g</p>
+            <p class="text-sm text-gray-500">daily goal</p>
+        </div>
+
+        <div class="p-4 bg-white border border-gray-200 rounded-lg">
+            <div class="flex items-center justify-between">
+                <h3 class="text-sm font-medium text-gray-500">Water Intake</h3>
+                <svg class="h-8 w-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-semibold text-gray-900">1.8L / 2.5L</p>
+            <p class="text-sm text-gray-500">daily target</p>
+        </div>
+    </div>
+
+    <!-- Weekly Progress -->
+    <div class="bg-white border border-gray-200 rounded-lg p-4">
+        <h3 class="text-lg font-medium text-gray-900 mb-4">Weekly Calorie Intake</h3>
+        <div class="h-64 flex items-end justify-between space-x-2">
+            <div class="flex-1 flex flex-col items-center">
+                <div class="w-full bg-blue-100 rounded-t" style="height: 60%"></div>
+                <span class="text-sm text-gray-500 mt-2">Mon</span>
+            </div>
+            <div class="flex-1 flex flex-col items-center">
+                <div class="w-full bg-blue-100 rounded-t" style="height: 80%"></div>
+                <span class="text-sm text-gray-500 mt-2">Tue</span>
+            </div>
+            <div class="flex-1 flex flex-col items-center">
+                <div class="w-full bg-blue-100 rounded-t" style="height: 65%"></div>
+                <span class="text-sm text-gray-500 mt-2">Wed</span>
+            </div>
+            <div class="flex-1 flex flex-col items-center">
+                <div class="w-full bg-blue-100 rounded-t" style="height: 75%"></div>
+                <span class="text-sm text-gray-500 mt-2">Thu</span>
+            </div>
+            <div class="flex-1 flex flex-col items-center">
+                <div class="w-full bg-blue-300 rounded-t" style="height: 90%"></div>
+                <span class="text-sm text-gray-500 mt-2">Fri</span>
+            </div>
+            <div class="flex-1 flex flex-col items-center">
+                <div class="w-full bg-blue-100 rounded-t" style="height: 50%"></div>
+                <span class="text-sm text-gray-500 mt-2">Sat</span>
+            </div>
+            <div class="flex-1 flex flex-col items-center">
+                <div class="w-full bg-blue-100 rounded-t" style="height: 70%"></div>
+                <span class="text-sm text-gray-500 mt-2">Sun</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Meals -->
+    <div class="bg-white border border-gray-200 rounded-lg p-4">
+        <h3 class="text-lg font-medium text-gray-900 mb-4">Recent Meals</h3>
+        <div class="space-y-4">
+            <div class="flex items-center justify-between p-2 hover:bg-gray-50 rounded-lg">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 rounded-lg bg-gray-200"></div>
+                    <div class="ml-4">
+                        <h4 class="text-sm font-medium text-gray-900">Breakfast</h4>
+                        <p class="text-sm text-gray-500">Oatmeal with fruits</p>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm font-medium text-gray-900">320 kcal</p>
+                    <p class="text-sm text-gray-500">8:30 AM</p>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between p-2 hover:bg-gray-50 rounded-lg">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 rounded-lg bg-gray-200"></div>
+                    <div class="ml-4">
+                        <h4 class="text-sm font-medium text-gray-900">Lunch</h4>
+                        <p class="text-sm text-gray-500">Grilled chicken salad</p>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm font-medium text-gray-900">450 kcal</p>
+                    <p class="text-sm text-gray-500">12:45 PM</p>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between p-2 hover:bg-gray-50 rounded-lg">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 rounded-lg bg-gray-200"></div>
+                    <div class="ml-4">
+                        <h4 class="text-sm font-medium text-gray-900">Snack</h4>
+                        <p class="text-sm text-gray-500">Mixed nuts</p>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm font-medium text-gray-900">180 kcal</p>
+                    <p class="text-sm text-gray-500">3:15 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nutrition Goals -->
+    <div class="bg-white border border-gray-200 rounded-lg p-4">
+        <h3 class="text-lg font-medium text-gray-900 mb-4">Nutrition Goals Progress</h3>
+        <div class="space-y-4">
+            <div>
+                <div class="flex justify-between items-center mb-1">
+                    <span class="text-sm font-medium text-gray-700">Proteins (82/120g)</span>
+                    <span class="text-sm font-medium text-gray-700">68%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-green-500 h-2 rounded-full" style="width: 68%"></div>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex justify-between items-center mb-1">
+                    <span class="text-sm font-medium text-gray-700">Carbs (210/250g)</span>
+                    <span class="text-sm font-medium text-gray-700">84%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-blue-500 h-2 rounded-full" style="width: 84%"></div>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex justify-between items-center mb-1">
+                    <span class="text-sm font-medium text-gray-700">Fats (45/65g)</span>
+                    <span class="text-sm font-medium text-gray-700">69%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 69%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</htmlCode><htmlCode>
+<div id="calorietracker" class="p-6 space-y-6">
+    <!-- Image Upload Section -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+        <h2 class="text-lg font-medium text-gray-900 mb-4">Calorie Estimation</h2>
+        <div class="max-w-xl mx-auto">
+            <div class="flex items-center justify-center w-full">
+                <label class="flex flex-col w-full h-48 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer hover:bg-gray-50">
+                    <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                        <svg class="w-12 h-12 mb-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/>
+                        </svg>
+                        <p class="mb-2 text-sm text-gray-500"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                        <p class="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
+                    </div>
+                    <input type="file" class="hidden" accept="image/*">
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Estimated Calories -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <h3 class="text-lg font-medium text-gray-900 mb-4">Estimated Calories</h3>
+            <div class="text-center">
+                <span class="text-4xl font-bold text-gray-900">485</span>
+                <span class="text-xl text-gray-500 ml-2">kcal</span>
+                <p class="text-sm text-gray-500 mt-2">Last updated: 2 minutes ago</p>
+            </div>
+            <div class="mt-6 space-y-4">
+                <div>
+                    <div class="flex justify-between text-sm font-medium text-gray-700 mb-1">
+                        <span>Confidence Score</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-green-500 h-2 rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nutritional Breakdown -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <h3 class="text-lg font-medium text-gray-900 mb-4">Nutritional Breakdown</h3>
+            <div class="space-y-4">
+                <div>
+                    <div class="flex justify-between text-sm font-medium text-gray-700 mb-1">
+                        <span>Proteins</span>
+                        <span>24g</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm font-medium text-gray-700 mb-1">
+                        <span>Carbs</span>
+                        <span>65g</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm font-medium text-gray-700 mb-1">
+                        <span>Fats</span>
+                        <span>12g</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-red-500 h-2 rounded-full" style="width: 40%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Allergen Alert -->
+    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+        <div class="flex">
+            <div class="flex-shrink-0">
+                <svg class="h-5 w-5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+            </div>
+            <div class="ml-3">
+                <h3 class="text-sm font-medium text-yellow-800">Allergen Warning</h3>
+                <div class="mt-2 text-sm text-yellow-700">
+                    <p>This meal may contain nuts and dairy products. Please check your allergen settings.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- History -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+        <h3 class="text-lg font-medium text-gray-900 mb-4">Recent Tracking History</h3>
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Time</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Meal</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Calories</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Accuracy</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Today, 2:30 PM</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Chicken Salad</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">485 kcal</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">95%</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Today, 12:15 PM</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Sandwich</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">320 kcal</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">92%</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Today, 8:30 AM</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Oatmeal</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">245 kcal</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">98%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</htmlCode><htmlCode>
+<div id="mealhistory" class="p-6 space-y-6">
+    <!-- Filters and Search -->
+    <div class="bg-white border border-gray-200 rounded-lg p-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
+            <div class="flex items-center space-x-4">
+                <div class="relative">
+                    <select class="block w-40 pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 rounded-md">
+                        <option>Last 7 days</option>
+                        <option>Last 30 days</option>
+                        <option>Last 3 months</option>
+                        <option>Custom range</option>
+                    </select>
+                </div>
+                <div class="relative">
+                    <select class="block w-32 pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 rounded-md">
+                        <option>All meals</option>
+                        <option>Breakfast</option>
+                        <option>Lunch</option>
+                        <option>Dinner</option>
+                        <option>Snacks</option>
+                    </select>
+                </div>
+            </div>
+            <div class="relative">
+                <input type="search" class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Search meals...">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Meal History Table -->
+    <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date & Time</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Meal Type</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Food Items</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Calories</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Macros</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Allergens</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">2024-02-20<br/>08:30 AM</td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Breakfast</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="text-sm text-gray-900">Oatmeal with Banana</div>
+                            <div class="text-sm text-gray-500">Mixed berries, Honey</div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="text-sm text-gray-900">380 kcal</div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="text-xs text-gray-900">
+                                <div>Protein: 12g</div>
+                                <div>Carbs: 68g</div>
+                                <div>Fat: 8g</div>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">Nuts</span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            <button class="text-blue-600 hover:text-blue-900">Edit</button>
+                            <button class="ml-3 text-red-600 hover:text-red-900">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">2024-02-20<br/>12:45 PM</td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">Lunch</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="text-sm text-gray-900">Grilled Chicken Salad</div>
+                            <div class="text-sm text-gray-500">Mixed greens, Avocado</div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="text-sm text-gray-900">450 kcal</div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="text-xs text-gray-900">
+                                <div>Protein: 38g</div>
+                                <div>Carbs: 12g</div>
+                                <div>Fat: 28g</div>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">None</span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            <button class="text-blue-600 hover:text-blue-900">Edit</button>
+                            <button class="ml-3 text-red-600 hover:text-red-900">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="bg-white px-4 py-3 border-t border-gray-200 sm:px-6">
+            <div class="flex items-center justify-between">
+                <div class="flex-1 flex justify-between sm:hidden">
+                    <button class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">Previous</button>
+                    <button class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">Next</button>
+                </div>
+                <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+                    <div>
+                        <p class="text-sm text-gray-700">
+                            Showing <span class="font-medium">1</span> to <span class="font-medium">10</span> of <span class="font-medium">97</span> results
+                        </p>
+                    </div>
+                    <div>
+                        <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                            <button class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                Previous
+                            </button>
+                            <button class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">1</button>
+                            <button class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">2</button>
+                            <button class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">3</button>
+                            <button class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                Next
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</htmlCode><htmlCode>
+<div id="nutritioninsights" class="p-6 space-y-6">
+    <!-- Insights Header -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+        <h2 class="text-xl font-semibold text-gray-900">Nutritional Insights & Analytics</h2>
+        <p class="mt-2 text-sm text-gray-600">Detailed analysis of your nutritional patterns and trends over time</p>
+    </div>
+
+    <!-- Macro Distribution -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <h3 class="text-lg font-medium text-gray-900 mb-4">Average Daily Macros</h3>
+            <div class="space-y-4">
+                <div>
+                    <div class="flex justify-between text-sm font-medium">
+                        <span>Proteins (25%)</span>
+                        <span>62.5g</span>
+                    </div>
+                    <div class="mt-2 w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-blue-500 h-2 rounded-full" style="width: 25%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm font-medium">
+                        <span>Carbohydrates (45%)</span>
+                        <span>112.5g</span>
+                    </div>
+                    <div class="mt-2 w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-green-500 h-2 rounded-full" style="width: 45%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm font-medium">
+                        <span>Fats (30%)</span>
+                        <span>75g</span>
+                    </div>
+                    <div class="mt-2 w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 30%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <h3 class="text-lg font-medium text-gray-900 mb-4">Caloric Distribution</h3>
+            <div class="space-y-4">
+                <div>
+                    <div class="flex justify-between text-sm font-medium">
+                        <span>Breakfast (30%)</span>
+                        <span>600 kcal</span>
+                    </div>
+                    <div class="mt-2 w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-indigo-500 h-2 rounded-full" style="width: 30%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm font-medium">
+                        <span>Lunch (35%)</span>
+                        <span>700 kcal</span>
+                    </div>
+                    <div class="mt-2 w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-purple-500 h-2 rounded-full" style="width: 35%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm font-medium">
+                        <span>Dinner (25%)</span>
+                        <span>500 kcal</span>
+                    </div>
+                    <div class="mt-2 w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-pink-500 h-2 rounded-full" style="width: 25%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm font-medium">
+                        <span>Snacks (10%)</span>
+                        <span>200 kcal</span>
+                    </div>
+                    <div class="mt-2 w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-orange-500 h-2 rounded-full" style="width: 10%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <h3 class="text-lg font-medium text-gray-900 mb-4">Nutrient Goals Progress</h3>
+            <div class="space-y-4">
+                <div>
+                    <div class="flex justify-between text-sm font-medium">
+                        <span>Fiber</span>
+                        <span>18/25g</span>
+                    </div>
+                    <div class="mt-2 w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-green-500 h-2 rounded-full" style="width: 72%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm font-medium">
+                        <span>Iron</span>
+                        <span>12/18mg</span>
+                    </div>
+                    <div class="mt-2 w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-red-500 h-2 rounded-full" style="width: 66%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm font-medium">
+                        <span>Calcium</span>
+                        <span>800/1000mg</span>
+                    </div>
+                    <div class="mt-2 w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trends Analysis -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+        <h3 class="text-lg font-medium text-gray-900 mb-4">Weekly Trends</h3>
+        <div class="h-64 flex items-end space-x-2">
+            <div class="flex-1 bg-blue-100 rounded-t hover:bg-blue-200 transition-all duration-300" style="height: 60%"></div>
+            <div class="flex-1 bg-blue-100 rounded-t hover:bg-blue-200 transition-all duration-300" style="height: 75%"></div>
+            <div class="flex-1 bg-blue-100 rounded-t hover:bg-blue-200 transition-all duration-300" style="height: 65%"></div>
+            <div class="flex-1 bg-blue-100 rounded-t hover:bg-blue-200 transition-all duration-300" style="height: 80%"></div>
+            <div class="flex-1 bg-blue-100 rounded-t hover:bg-blue-200 transition-all duration-300" style="height: 70%"></div>
+            <div class="flex-1 bg-blue-100 rounded-t hover:bg-blue-200 transition-all duration-300" style="height: 85%"></div>
+            <div class="flex-1 bg-blue-100 rounded-t hover:bg-blue-200 transition-all duration-300" style="height: 72%"></div>
+        </div>
+        <div class="flex justify-between mt-2 text-sm text-gray-600">
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+            <span>Sat</span>
+            <span>Sun</span>
+        </div>
+    </div>
+
+    <!-- Recommendations -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+        <h3 class="text-lg font-medium text-gray-900 mb-4">Personalized Recommendations</h3>
+        <div class="space-y-4">
+            <div class="flex items-start space-x-3">
+                <svg class="h-6 w-6 text-green-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <div>
+                    <h4 class="font-medium text-gray-900">Increase Protein Intake</h4>
+                    <p class="text-sm text-gray-600">Consider adding more lean proteins to reach your daily goal of 150g</p>
+                </div>
+            </div>
+            <div class="flex items-start space-x-3">
+                <svg class="h-6 w-6 text-yellow-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+                <div>
+                    <h4 class="font-medium text-gray-900">Fiber Intake Below Target</h4>
+                    <p class="text-sm text-gray-600">Try incorporating more whole grains and vegetables into your meals</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</htmlCode><htmlCode>
+<div id="allergenmanagement" class="p-6 space-y-6">
+    <!-- Header Section -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+        <div class="flex justify-between items-center">
+            <div>
+                <h2 class="text-xl font-semibold text-gray-900">Allergen Management</h2>
+                <p class="mt-1 text-sm text-gray-600">Configure and monitor your food allergens and sensitivities</p>
+            </div>
+            <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                Add New Allergen
+            </button>
+        </div>
+    </div>
+
+    <!-- Active Allergens -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+        <h3 class="text-lg font-medium text-gray-900 mb-4">Active Allergens</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="border border-red-200 bg-red-50 rounded-lg p-4">
+                <div class="flex justify-between items-start">
+                    <div class="flex items-center">
+                        <svg class="h-5 w-5 text-red-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                        </svg>
+                        <span class="font-medium text-red-700">Peanuts</span>
+                    </div>
+                    <button class="text-red-600 hover:text-red-800">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <p class="mt-2 text-sm text-red-600">Severe allergy - Avoid all contact</p>
+            </div>
+
+            <div class="border border-red-200 bg-red-50 rounded-lg p-4">
+                <div class="flex justify-between items-start">
+                    <div class="flex items-center">
+                        <svg class="h-5 w-5 text-red-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                        </svg>
+                        <span class="font-medium text-red-700">Shellfish</span>
+                    </div>
+                    <button class="text-red-600 hover:text-red-800">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <p class="mt-2 text-sm text-red-600">Moderate allergy - Avoid consumption</p>
+            </div>
+
+            <div class="border border-yellow-200 bg-yellow-50 rounded-lg p-4">
+                <div class="flex justify-between items-start">
+                    <div class="flex items-center">
+                        <svg class="h-5 w-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                        </svg>
+                        <span class="font-medium text-yellow-700">Lactose</span>
+                    </div>
+                    <button class="text-yellow-600 hover:text-yellow-800">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <p class="mt-2 text-sm text-yellow-600">Intolerance - Limited consumption</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Alerts -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+        <h3 class="text-lg font-medium text-gray-900 mb-4">Recent Allergen Alerts</h3>
+        <div class="space-y-4">
+            <div class="flex items-start space-x-3 p-4 bg-red-50 border border-red-100 rounded-lg">
+                <svg class="h-6 w-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+                <div>
+                    <h4 class="font-medium text-red-800">Peanut Alert</h4>
+                    <p class="text-sm text-red-600">Detected in Thai Curry - Today, 2:30 PM</p>
+                </div>
+            </div>
+
+            <div class="flex items-start space-x-3 p-4 bg-yellow-50 border border-yellow-100 rounded-lg">
+                <svg class="h-6 w-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+                <div>
+                    <h4 class="font-medium text-yellow-800">Lactose Alert</h4>
+                    <p class="text-sm text-yellow-600">Detected in Coffee Drink - Yesterday, 9:15 AM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Allergen Settings -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+        <h3 class="text-lg font-medium text-gray-900 mb-4">Allergen Detection Settings</h3>
+        <div class="space-y-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h4 class="font-medium text-gray-900">Alert Notifications</h4>
+                    <p class="text-sm text-gray-500">Receive push notifications for allergen alerts</p>
+                </div>
+                <button class="relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 bg-blue-600">
+                    <span class="sr-only">Toggle notifications</span>
+                    <span class="translate-x-5 relative inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                </button>
+            </div>
+
+            <div class="flex items-center justify-between">
+                <div>
+                    <h4 class="font-medium text-gray-900">Email Alerts</h4>
+                    <p class="text-sm text-gray-500">Receive email notifications for allergen alerts</p>
+                </div>
+                <button class="relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 bg-gray-200">
+                    <span class="sr-only">Toggle email alerts</span>
+                    <span class="translate-x-0 relative inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                </button>
+            </div>
+
+            <div class="flex items-center justify-between">
+                <div>
+                    <h4 class="font-medium text-gray-900">Strict Mode</h4>
+                    <p class="text-sm text-gray-500">Alert for potential cross-contamination</p>
+                </div>
+                <button class="relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 bg-blue-600">
+                    <span class="sr-only">Toggle strict mode</span>
+                    <span class="translate-x-5 relative inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</htmlCode><htmlCode>
+<div id="healthchat" class="p-6 flex h-[calc(100vh-80px)]">
+    <div class="flex flex-col w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+        <!-- Chat Header -->
+        <div class="p-4 border-b border-gray-200">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="flex-shrink-0">
+                        <div class="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                            <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-lg font-semibold text-gray-900">NutriTrack AI Health Assistant</h2>
+                        <p class="text-sm text-gray-500">Online • Typically replies instantly</p>
+                    </div>
+                </div>
+                <button class="p-2 text-gray-400 hover:text-gray-600">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Chat Messages -->
+        <div class="flex-1 overflow-y-auto p-4 space-y-4">
+            <!-- AI Message -->
+            <div class="flex items-start">
+                <div class="flex-shrink-0">
+                    <div class="h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center">
+                        <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="ml-3 bg-gray-100 rounded-lg py-2 px-4 max-w-[75%]">
+                    <p class="text-sm text-gray-900">Hello! I'm your NutriTrack AI assistant. How can I help you with your nutrition goals today?</p>
+                </div>
+            </div>
+
+            <!-- User Message -->
+            <div class="flex items-start justify-end">
+                <div class="bg-blue-600 rounded-lg py-2 px-4 max-w-[75%]">
+                    <p class="text-sm text-white">Can you suggest a healthy breakfast for someone with diabetes?</p>
+                </div>
+            </div>
+
+            <!-- AI Message -->
+            <div class="flex items-start">
+                <div class="flex-shrink-0">
+                    <div class="h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center">
+                        <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="ml-3 bg-gray-100 rounded-lg py-2 px-4 max-w-[75%]">
+                    <p class="text-sm text-gray-900">Here's a diabetes-friendly breakfast suggestion:</p>
+                    <ul class="mt-2 text-sm text-gray-900 list-disc list-inside">
+                        <li>Steel-cut oatmeal with cinnamon</li>
+                        <li>1/2 cup of berries</li>
+                        <li>2 tablespoons of chopped nuts</li>
+                        <li>1 hard-boiled egg</li>
+                    </ul>
+                    <p class="mt-2 text-sm text-gray-900">This combination provides fiber, protein, and healthy fats while maintaining stable blood sugar levels.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Input -->
+        <div class="border-t border-gray-200 p-4">
+            <div class="flex items-center space-x-2">
+                <button class="p-2 text-gray-400 hover:text-gray-600">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/>
+                    </svg>
+                </button>
+                <input type="text" class="flex-1 border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-blue-500" placeholder="Type your message...">
+                <button class="p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-2 text-xs text-gray-500">
+                Press Enter to send, Shift + Enter for new line
+            </div>
+        </div>
+    </div>
+</div>
+</htmlCode><htmlCode>
+<div id="profile" class="p-6 space-y-6">
+    <div class="max-w-4xl mx-auto">
+        <!-- Profile Header -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
+            <div class="flex flex-col sm:flex-row items-center">
+                <div class="relative">
+                    <img src="https://placehold.co/100x100" alt="Profile" class="h-24 w-24 rounded-full border-4 border-white shadow">
+                    <button class="absolute bottom-0 right-0 bg-blue-600 text-white p-1.5 rounded-full hover:bg-blue-700">
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:ml-6 text-center sm:text-left">
+                    <h1 class="text-2xl font-bold text-gray-900">John Doe</h1>
+                    <p class="text-gray-500">john.doe@example.com</p>
+                    <div class="mt-2 flex flex-wrap justify-center sm:justify-start gap-2">
+                        <span class="px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded-full">Premium Member</span>
+                        <span class="px-3 py-1 text-sm bg-green-100 text-green-800 rounded-full">Verified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Information -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Personal Information -->
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h2 class="text-lg font-medium text-gray-900 mb-4">Personal Information</h2>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" value="John Doe" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" value="john.doe@example.com" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Phone</label>
+                        <input type="tel" value="+1 (555) 123-4567" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Health Information -->
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h2 class="text-lg font-medium text-gray-900 mb-4">Health Information</h2>
+                <div class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Height</label>
+                            <input type="text" value="175 cm" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Weight</label>
+                            <input type="text" value="70 kg" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Activity Level</label>
+                        <select class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            <option>Sedentary</option>
+                            <option selected>Moderately Active</option>
+                            <option>Very Active</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Goal</label>
+                        <select class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            <option>Weight Loss</option>
+                            <option selected>Maintain Weight</option>
+                            <option>Weight Gain</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dietary Preferences -->
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h2 class="text-lg font-medium text-gray-900 mb-4">Dietary Preferences</h2>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Diet Type</label>
+                        <select class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            <option>No Restrictions</option>
+                            <option selected>Vegetarian</option>
+                            <option>Vegan</option>
+                            <option>Keto</option>
+                            <option>Paleo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Food Allergies</label>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <input type="checkbox" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                <label class="ml-2 text-sm text-gray-700">Peanuts</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" checked class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                <label class="ml-2 text-sm text-gray-700">Lactose</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                <label class="ml-2 text-sm text-gray-700">Gluten</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notification Settings -->
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h2 class="text-lg font-medium text-gray-900 mb-4">Notification Settings</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3 class="text-sm font-medium text-gray-900">Email Notifications</h3>
+                            <p class="text-sm text-gray-500">Receive updates about your nutrition</p>
+                        </div>
+                        <button class="relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 bg-blue-600">
+                            <span class="translate-x-5 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                        </button>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3 class="text-sm font-medium text-gray-900">Push Notifications</h3>
+                            <p class="text-sm text-gray-500">Get alerts on your mobile device</p>
+                        </div>
+                        <button class="relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 bg-blue-600">
+                            <span class="translate-x-5 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Save Changes Button -->
+        <div class="mt-6 flex justify-end">
+            <button type="button" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                Save Changes
+            </button>
+        </div>
+    </div>
+</div>
+</htmlCode><htmlCode>
+<div id="settings" class="p-6 space-y-6 max-w-4xl mx-auto">
+    <!-- App Settings -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+        <h2 class="text-lg font-medium text-gray-900 mb-6">Application Settings</h2>
+        
+        <!-- Theme Settings -->
+        <div class="mb-8">
+            <h3 class="text-sm font-medium text-gray-900 mb-4">Theme Preferences</h3>
+            <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <span class="text-sm font-medium text-gray-900">Dark Mode</span>
+                        <p class="text-sm text-gray-500">Enable dark theme for the application</p>
+                    </div>
+                    <button class="relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 bg-gray-200">
+                        <span class="translate-x-0 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notification Settings -->
+        <div class="border-t border-gray-200 pt-6 mb-8">
+            <h3 class="text-sm font-medium text-gray-900 mb-4">Notification Settings</h3>
+            <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <span class="text-sm font-medium text-gray-900">Email Notifications</span>
+                        <p class="text-sm text-gray-500">Receive weekly nutrition reports</p>
+                    </div>
+                    <button class="relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 bg-blue-600">
+                        <span class="translate-x-5 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                    </button>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div>
+                        <span class="text-sm font-medium text-gray-900">Push Notifications</span>
+                        <p class="text-sm text-gray-500">Get real-time meal reminders</p>
+                    </div>
+                    <button class="relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 bg-blue-600">
+                        <span class="translate-x-5 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Privacy Settings -->
+        <div class="border-t border-gray-200 pt-6 mb-8">
+            <h3 class="text-sm font-medium text-gray-900 mb-4">Privacy Settings</h3>
+            <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <span class="text-sm font-medium text-gray-900">Data Sharing</span>
+                        <p class="text-sm text-gray-500">Share anonymized data for research</p>
+                    </div>
+                    <button class="relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 bg-gray-200">
+                        <span class="translate-x-0 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                    </button>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div>
+                        <span class="text-sm font-medium text-gray-900">Profile Visibility</span>
+                        <p class="text-sm text-gray-500">Make profile public to other users</p>
+                    </div>
+                    <button class="relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 bg-gray-200">
+                        <span class="translate-x-0 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Units & Measurements -->
+        <div class="border-t border-gray-200 pt-6 mb-8">
+            <h3 class="text-sm font-medium text-gray-900 mb-4">Units & Measurements</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Weight Unit</label>
+                    <select class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        <option>Kilograms (kg)</option>
+                        <option>Pounds (lbs)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Height Unit</label>
+                    <select class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        <option>Centimeters (cm)</option>
+                        <option>Feet/Inches (ft/in)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Energy Unit</label>
+                    <select class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        <option>Calories (kcal)</option>
+                        <option>Kilojoules (kJ)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Date Format</label>
+                    <select class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        <option>DD/MM/YYYY</option>
+                        <option>MM/DD/YYYY</option>
+                        <option>YYYY/MM/DD</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Management -->
+        <div class="border-t border-gray-200 pt-6">
+            <h3 class="text-sm font-medium text-gray-900 mb-4">Data Management</h3>
+            <div class="space-y-4">
+                <button class="inline-flex items-center px-4 py-2 border border-red-300 text-sm font-medium rounded-md text-red-700 bg-white hover:bg-red-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                    <svg class="mr-2 h-5 w-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                    </svg>
+                    Delete Account
+                </button>
+                <button class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    <svg class="mr-2 h-5 w-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                    </svg>
+                    Export Data
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Save Changes -->
+    <div class="flex justify-end space-x-4">
+        <button class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            Cancel
+        </button>
+        <button class="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            Save Changes
+        </button>
+    </div>
+</div>
+</htmlCode>

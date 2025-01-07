@@ -1,0 +1,1177 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+   </body>
+</html><htmlCode>
+<div id="root">
+  <nav id="navbar" class="fixed w-full z-50 bg-neutral-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex-shrink-0 flex items-center">
+          <span class="text-xl font-bold">NutriTrack</span>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-center space-x-4">
+            <a href="#hero" class="hover:text-green-400 px-3 py-2 text-sm font-medium">Home</a>
+            <a href="#features" class="hover:text-green-400 px-3 py-2 text-sm font-medium">Features</a>
+            <a href="#howitworks" class="hover:text-green-400 px-3 py-2 text-sm font-medium">How It Works</a>
+            <a href="#pricing" class="hover:text-green-400 px-3 py-2 text-sm font-medium">Pricing</a>
+            <a href="#testimonials" class="hover:text-green-400 px-3 py-2 text-sm font-medium">Testimonials</a>
+            <a href="#blog" class="hover:text-green-400 px-3 py-2 text-sm font-medium">Blog</a>
+            <a href="#contact" class="hover:text-green-400 px-3 py-2 text-sm font-medium">Contact</a>
+            <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300" onclick="window.location.href='/signin.html'">
+              Sign Up/Sign In
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-green-400 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-neutral-900">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="#hero" class="block px-3 py-2 text-base font-medium hover:text-green-400">Home</a>
+        <a href="#features" class="block px-3 py-2 text-base font-medium hover:text-green-400">Features</a>
+        <a href="#howitworks" class="block px-3 py-2 text-base font-medium hover:text-green-400">How It Works</a>
+        <a href="#pricing" class="block px-3 py-2 text-base font-medium hover:text-green-400">Pricing</a>
+        <a href="#testimonials" class="block px-3 py-2 text-base font-medium hover:text-green-400">Testimonials</a>
+        <a href="#blog" class="block px-3 py-2 text-base font-medium hover:text-green-400">Blog</a>
+        <a href="#contact" class="block px-3 py-2 text-base font-medium hover:text-green-400">Contact</a>
+        <button class="w-full bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300 mt-4">
+          Sign Up/Sign In
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  </script>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <section id="hero" class="bg-neutral-900 text-white min-h-screen pt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+      <div class="flex flex-col md:flex-row items-center justify-between py-20">
+        <div class="md:w-1/2 space-y-8 animate__animated animate__fadeInLeft">
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+            Take Control of Your Nutrition with Precision
+          </h1>
+          <p class="text-xl text-gray-300">
+            NutriTrack uses AI to estimate calories from food images, helping you manage your diet and health goals with ease.
+          </p>
+          <div class="space-y-4">
+            <p class="text-gray-400">
+              Whether you're managing a chronic illness like diabetes or just trying to stay fit, NutriTrack gives you precise calorie data instantly with just a photo.
+            </p>
+            <p class="text-gray-400">
+              Say goodbye to complicated calorie tracking—let NutriTrack do the hard work for you.
+            </p>
+          </div>
+          <div class="flex space-x-4">
+            <button class="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-medium transition duration-300 transform hover:scale-105">
+              Try NutriTrack Now
+            </button>
+            <button class="border border-green-500 text-green-500 hover:bg-green-500 hover:text-white px-8 py-3 rounded-lg font-medium transition duration-300">
+              Learn More
+            </button>
+          </div>
+        </div>
+        
+        <div class="md:w-1/2 mt-12 md:mt-0 animate__animated animate__fadeInRight">
+          <div class="relative">
+            <div class="absolute -inset-1 bg-green-500 rounded-lg blur opacity-25"></div>
+            <div class="relative bg-neutral-800 p-8 rounded-lg">
+              <div class="grid grid-cols-2 gap-6">
+                <div class="text-center p-4">
+                  <div class="bg-neutral-700 p-4 rounded-lg mb-3">
+                    <svg class="w-8 h-8 mx-auto text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                  </div>
+                  <h3 class="font-medium">AI-Powered</h3>
+                </div>
+                <div class="text-center p-4">
+                  <div class="bg-neutral-700 p-4 rounded-lg mb-3">
+                    <svg class="w-8 h-8 mx-auto text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                    </svg>
+                  </div>
+                  <h3 class="font-medium">Calorie Tracking</h3>
+                </div>
+                <div class="text-center p-4">
+                  <div class="bg-neutral-700 p-4 rounded-lg mb-3">
+                    <svg class="w-8 h-8 mx-auto text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+                    </svg>
+                  </div>
+                  <h3 class="font-medium">Food Awareness</h3>
+                </div>
+                <div class="text-center p-4">
+                  <div class="bg-neutral-700 p-4 rounded-lg mb-3">
+                    <svg class="w-8 h-8 mx-auto text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                    </svg>
+                  </div>
+                  <h3 class="font-medium">Health Monitoring</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <section id="features" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold text-neutral-900 mb-4">Powerful Features for Your Health Journey</h2>
+        <p class="text-xl text-neutral-600">Advanced tools that make nutrition tracking effortless</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- AI-Powered Calorie Estimations -->
+        <div class="bg-neutral-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__fadeInUp">
+          <div class="bg-green-500 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">AI-Powered Calorie Estimations</h3>
+          <p class="text-neutral-600">Accurate calorie count from food images using cutting-edge AI.</p>
+        </div>
+
+        <!-- Personalized Allergen Tracking -->
+        <div class="bg-neutral-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+          <div class="bg-green-500 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Personalized Allergen Tracking</h3>
+          <p class="text-neutral-600">Know exactly what's in your food with allergen detection.</p>
+        </div>
+
+        <!-- Health Chat Assistant -->
+        <div class="bg-neutral-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+          <div class="bg-green-500 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Health Chat Assistant</h3>
+          <p class="text-neutral-600">Get instant health advice with our AI health chat feature.</p>
+        </div>
+
+        <!-- Diet Mapping -->
+        <div class="bg-neutral-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.6s">
+          <div class="bg-green-500 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Diet Mapping for Professionals</h3>
+          <p class="text-neutral-600">Healthcare providers can manage client meal plans effectively.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <button class="bg-green-500 text-white px-8 py-3 rounded-lg font-medium hover:bg-green-600 transition duration-300 transform hover:scale-105 animate__animated animate__fadeIn">
+          Explore All Features
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <section id="howitworks" class="py-20 bg-neutral-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold text-neutral-900 mb-4">How NutriTrack Works</h2>
+        <p class="text-xl text-neutral-600">Four simple steps to transform your nutrition journey</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Step 1 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg animate__animated animate__fadeInUp">
+          <div class="bg-green-500 w-12 h-12 rounded-full flex items-center justify-center mb-6 text-white font-bold text-xl">
+            1
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Download and Sign Up</h3>
+          <p class="text-neutral-600 mb-4">Get started by downloading NutriTrack on iOS/Android or signing up through the website.</p>
+          <div class="flex space-x-4">
+            <button class="flex items-center justify-center bg-black text-white px-4 py-2 rounded-lg">
+              <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.34 5.46l2.83-2.83c.2-.2.2-.51 0-.71s-.51-.2-.71 0l-2.83 2.83c-1.21-.74-2.66-1.17-4.22-1.17-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-1.56-.43-3.01-1.17-4.22z"/>
+              </svg>
+              App Store
+            </button>
+            <button class="flex items-center justify-center bg-black text-white px-4 py-2 rounded-lg">
+              <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M6.4 20.59l8.63-8.59-8.63-8.59 2.83-2.83 11.42 11.42-11.42 11.42z"/>
+              </svg>
+              Play Store
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+          <div class="bg-green-500 w-12 h-12 rounded-full flex items-center justify-center mb-6 text-white font-bold text-xl">
+            2
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Take a Photo of Your Meal</h3>
+          <p class="text-neutral-600">Simply snap a picture of your food, and NutriTrack will automatically analyze it.</p>
+          <div class="mt-6">
+            <div class="bg-neutral-100 h-32 rounded-lg flex items-center justify-center">
+              <svg class="w-16 h-16 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+          <div class="bg-green-500 w-12 h-12 rounded-full flex items-center justify-center mb-6 text-white font-bold text-xl">
+            3
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Receive Calorie Estimation</h3>
+          <p class="text-neutral-600">Our AI will detect the food, estimate the calories, and provide you with a detailed breakdown.</p>
+          <div class="mt-6">
+            <div class="bg-neutral-100 p-4 rounded-lg">
+              <div class="flex justify-between items-center mb-2">
+                <span class="font-medium">Total Calories:</span>
+                <span class="text-green-500 font-bold">425 kcal</span>
+              </div>
+              <div class="space-y-2">
+                <div class="h-2 bg-green-200 rounded-full">
+                  <div class="h-2 bg-green-500 rounded-full" style="width: 70%"></div>
+                </div>
+                <div class="flex justify-between text-sm text-neutral-600">
+                  <span>Proteins: 20g</span>
+                  <span>Carbs: 55g</span>
+                  <span>Fats: 15g</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg animate__animated animate__fadeInUp" style="animation-delay: 0.6s">
+          <div class="bg-green-500 w-12 h-12 rounded-full flex items-center justify-center mb-6 text-white font-bold text-xl">
+            4
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Track Your Progress</h3>
+          <p class="text-neutral-600">Monitor your intake over time with graphs and insights that help you meet your nutritional goals.</p>
+          <div class="mt-6">
+            <div class="bg-neutral-100 p-4 rounded-lg">
+              <div class="space-y-3">
+                <div class="h-4 bg-green-200 rounded-full w-full"></div>
+                <div class="h-4 bg-green-300 rounded-full w-3/4"></div>
+                <div class="h-4 bg-green-400 rounded-full w-1/2"></div>
+                <div class="h-4 bg-green-500 rounded-full w-2/3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-16">
+        <button class="bg-green-500 text-white px-8 py-3 rounded-lg font-medium hover:bg-green-600 transition duration-300 transform hover:scale-105 animate__animated animate__fadeIn">
+          Get Started Now
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <section id="pricing" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold text-neutral-900 mb-4">Simple, Transparent Pricing</h2>
+        <p class="text-xl text-neutral-600">Choose the plan that best fits your needs</p>
+      </div>
+
+      <!-- Pricing Banner -->
+      <div class="bg-green-100 p-4 rounded-lg mb-12 text-center animate__animated animate__fadeIn">
+        <p class="text-green-800">🎉 Special Offer: Get 7 days free trial with any premium plan!</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Free Plan -->
+        <div class="bg-white p-8 rounded-xl shadow-lg border border-neutral-200 hover:shadow-xl transition duration-300 animate__animated animate__fadeInUp">
+          <h3 class="text-2xl font-bold mb-4">Free Plan</h3>
+          <div class="text-4xl font-bold mb-6">
+            $0<span class="text-lg text-neutral-600 font-normal">/month</span>
+          </div>
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Basic calorie estimation
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              10 food scans per week
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Basic food logging
+            </li>
+          </ul>
+          <button class="w-full bg-neutral-100 text-neutral-800 py-3 rounded-lg font-medium hover:bg-neutral-200 transition duration-300">
+            Get Started
+          </button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="bg-neutral-900 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform scale-105 animate__animated animate__fadeInUp">
+          <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm">Most Popular</div>
+          <h3 class="text-2xl font-bold mb-4 text-white">Premium</h3>
+          <div class="text-4xl font-bold mb-6 text-white">
+            $9.99<span class="text-lg text-neutral-400 font-normal">/month</span>
+          </div>
+          <ul class="space-y-4 mb-8 text-white">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Unlimited food scans
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Allergen tracking
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              AI Health chat
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Progress reports
+            </li>
+          </ul>
+          <button class="w-full bg-green-500 text-white py-3 rounded-lg font-medium hover:bg-green-600 transition duration-300">
+            Start Free Trial
+          </button>
+        </div>
+
+        <!-- Professional Plan -->
+        <div class="bg-white p-8 rounded-xl shadow-lg border border-neutral-200 hover:shadow-xl transition duration-300 animate__animated animate__fadeInUp">
+          <h3 class="text-2xl font-bold mb-4">Professional</h3>
+          <div class="text-4xl font-bold mb-6">
+            $29.99<span class="text-lg text-neutral-600 font-normal">/month</span>
+          </div>
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              All Premium features
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Client management
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Advanced analytics
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              API access
+            </li>
+          </ul>
+          <button class="w-full bg-neutral-100 text-neutral-800 py-3 rounded-lg font-medium hover:bg-neutral-200 transition duration-300">
+            Contact Sales
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <p class="text-neutral-600 mb-4">Need a custom solution for your organization?</p>
+        <button class="bg-neutral-900 text-white px-8 py-3 rounded-lg font-medium hover:bg-neutral-800 transition duration-300">
+          Get Enterprise Quote
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <section id="testimonials" class="py-20 bg-neutral-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold text-neutral-900 mb-4">What Our Users Say</h2>
+        <p class="text-xl text-neutral-600">Real stories from real people who transformed their nutrition journey</p>
+      </div>
+
+      <div class="testimonial-slider relative">
+        <div class="swiper-container">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg animate__animated animate__fadeInUp">
+              <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-neutral-200 rounded-full flex items-center justify-center">
+                  <svg class="w-6 h-6 text-neutral-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <div class="ml-4">
+                  <h4 class="font-semibold">Sarah Johnson</h4>
+                  <p class="text-neutral-600 text-sm">Weight Loss Journey</p>
+                </div>
+              </div>
+              <p class="text-neutral-700 mb-4">"NutriTrack made tracking my calories so effortless. I've lost 20 pounds in 3 months just by being more aware of what I eat!"</p>
+              <div class="flex text-green-500">
+                ★★★★★
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+              <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-neutral-200 rounded-full flex items-center justify-center">
+                  <svg class="w-6 h-6 text-neutral-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <div class="ml-4">
+                  <h4 class="font-semibold">David Chen</h4>
+                  <p class="text-neutral-600 text-sm">Fitness Enthusiast</p>
+                </div>
+              </div>
+              <p class="text-neutral-700 mb-4">"The AI chat feature is like having a nutritionist in my pocket. It helps me make better food choices every day."</p>
+              <div class="flex text-green-500">
+                ★★★★★
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+              <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-neutral-200 rounded-full flex items-center justify-center">
+                  <svg class="w-6 h-6 text-neutral-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <div class="ml-4">
+                  <h4 class="font-semibold">Emma Martinez</h4>
+                  <p class="text-neutral-600 text-sm">Diabetes Management</p>
+                </div>
+              </div>
+              <p class="text-neutral-700 mb-4">"Managing my diabetes has become so much easier with NutriTrack's precise calorie and nutrient tracking."</p>
+              <div class="flex text-green-500">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg hover:bg-neutral-100 focus:outline-none md:-left-6 hidden md:block" id="prev">
+          <svg class="w-6 h-6 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </button>
+        <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg hover:bg-neutral-100 focus:outline-none md:-right-6 hidden md:block" id="next">
+          <svg class="w-6 h-6 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const testimonialContainer = document.querySelector('.testimonial-slider');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    let currentSlide = 0;
+    
+    function updateSlider() {
+      const slides = testimonialContainer.querySelectorAll('.grid > div');
+      slides.forEach((slide, index) => {
+        if (index === currentSlide) {
+          slide.style.opacity = '1';
+          slide.style.transform = 'translateX(0)';
+        } else {
+          slide.style.opacity = '0';
+          slide.style.transform = 'translateX(100%)';
+        }
+      });
+    }
+
+    prevButton.addEventListener('click', () => {
+      const slides = testimonialContainer.querySelectorAll('.grid > div');
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      updateSlider();
+    });
+
+    nextButton.addEventListener('click', () => {
+      const slides = testimonialContainer.querySelectorAll('.grid > div');
+      currentSlide = (currentSlide + 1) % slides.length;
+      updateSlider();
+    });
+  </script>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <section id="blog" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold text-neutral-900 mb-4">Latest from Our Blog</h2>
+        <p class="text-xl text-neutral-600">Expert nutrition tips and insights for your health journey</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Blog Post 1 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp">
+          <div class="bg-neutral-200 h-48 flex items-center justify-center">
+            <svg class="w-12 h-12 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+          </div>
+          <div class="p-6">
+            <span class="text-green-500 text-sm font-semibold">Nutrition Guide</span>
+            <h3 class="text-xl font-bold mt-2 mb-3">How to Calculate Your Daily Calorie Needs</h3>
+            <p class="text-neutral-600 mb-4">Learn the science behind calculating your optimal daily calorie intake for your health goals.</p>
+            <a href="#" class="text-green-500 font-medium hover:text-green-600">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+          <div class="bg-neutral-200 h-48 flex items-center justify-center">
+            <svg class="w-12 h-12 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+            </svg>
+          </div>
+          <div class="p-6">
+            <span class="text-green-500 text-sm font-semibold">Recipes</span>
+            <h3 class="text-xl font-bold mt-2 mb-3">10 Easy Low-Calorie Meals You Can Make in 15 Minutes</h3>
+            <p class="text-neutral-600 mb-4">Quick and healthy meal ideas for busy people who want to maintain a healthy diet.</p>
+            <a href="#" class="text-green-500 font-medium hover:text-green-600">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+          <div class="bg-neutral-200 h-48 flex items-center justify-center">
+            <svg class="w-12 h-12 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+          </div>
+          <div class="p-6">
+            <span class="text-green-500 text-sm font-semibold">Health & Safety</span>
+            <h3 class="text-xl font-bold mt-2 mb-3">The Importance of Allergen Awareness in Your Diet</h3>
+            <p class="text-neutral-600 mb-4">Understanding food allergies and how to safely navigate your dietary restrictions.</p>
+            <a href="#" class="text-green-500 font-medium hover:text-green-600">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 4 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp" style="animation-delay: 0.6s">
+          <div class="bg-neutral-200 h-48 flex items-center justify-center">
+            <svg class="w-12 h-12 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <div class="p-6">
+            <span class="text-green-500 text-sm font-semibold">Success Story</span>
+            <h3 class="text-xl font-bold mt-2 mb-3">Using NutriTrack for Weight Loss: A Success Story</h3>
+            <p class="text-neutral-600 mb-4">Read how Sarah transformed her life using NutriTrack's AI-powered nutrition tracking.</p>
+            <a href="#" class="text-green-500 font-medium hover:text-green-600">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <button class="bg-neutral-900 text-white px-8 py-3 rounded-lg font-medium hover:bg-neutral-800 transition duration-300 animate__animated animate__fadeIn">
+          View All Articles
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <section id="contact" class="py-20 bg-neutral-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold text-neutral-900 mb-4">Get in Touch</h2>
+        <p class="text-xl text-neutral-600">We're here to help with all your nutrition tracking needs</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div class="bg-white p-8 rounded-xl shadow-lg animate__animated animate__fadeInLeft">
+          <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-neutral-700 mb-2">Name</label>
+              <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-neutral-700 mb-2">Email</label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+            </div>
+            <div>
+              <label for="subject" class="block text-sm font-medium text-neutral-700 mb-2">Subject</label>
+              <select id="subject" name="subject" class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                <option value="support">Technical Support</option>
+                <option value="billing">Billing Question</option>
+                <option value="feature">Feature Request</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-neutral-700 mb-2">Message</label>
+              <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-green-500 focus:border-green-500" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-green-500 text-white py-3 rounded-lg font-medium hover:bg-green-600 transition duration-300">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="space-y-8 animate__animated animate__fadeInRight">
+          <!-- FAQ Section -->
+          <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
+            <h3 class="text-2xl font-bold mb-6">Frequently Asked Questions</h3>
+            <div class="space-y-4">
+              <details class="group">
+                <summary class="flex justify-between items-center cursor-pointer list-none p-4 bg-neutral-50 rounded-lg">
+                  <span class="font-medium">How accurate is the calorie estimation?</span>
+                  <span class="transform group-open:rotate-180 transition-transform">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                  </span>
+                </summary>
+                <p class="p-4 text-neutral-600">Our AI-powered system provides up to 95% accuracy in calorie estimation for most common foods and dishes.</p>
+              </details>
+              <details class="group">
+                <summary class="flex justify-between items-center cursor-pointer list-none p-4 bg-neutral-50 rounded-lg">
+                  <span class="font-medium">How do I get started?</span>
+                  <span class="transform group-open:rotate-180 transition-transform">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                  </span>
+                </summary>
+                <p class="p-4 text-neutral-600">Simply download the app from your device's app store and create an account to begin tracking your nutrition.</p>
+              </details>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                <span>1-800-NUTRITRACK</span>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                <span>support@nutritrack.com</span>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                <span>123 Nutrition Street, Health City, HC 12345</span>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <h4 class="font-semibold mb-4">Business Hours</h4>
+              <p class="text-neutral-600">Monday - Friday: 9:00 AM - 6:00 PM EST</p>
+              <p class="text-neutral-600">Saturday: 10:00 AM - 4:00 PM EST</p>
+              <p class="text-neutral-600">Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 text-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <!-- Company Info -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold mb-4">NutriTrack</h3>
+          <p class="text-neutral-400">Your Smart Calorie Estimation & Dietary Management Solution</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+            </a>
+            <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+            </a>
+            <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#features" class="text-neutral-400 hover:text-white transition-colors">Features</a></li>
+            <li><a href="#howitworks" class="text-neutral-400 hover:text-white transition-colors">How It Works</a></li>
+            <li><a href="#pricing" class="text-neutral-400 hover:text-white transition-colors">Pricing</a></li>
+            <li><a href="#blog" class="text-neutral-400 hover:text-white transition-colors">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Legal</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Terms & Conditions</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Cookie Policy</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact</h3>
+          <ul class="space-y-2">
+            <li class="text-neutral-400">1-800-NUTRITRACK</li>
+            <li class="text-neutral-400">support@nutritrack.com</li>
+            <li class="text-neutral-400">123 Nutrition Street</li>
+            <li class="text-neutral-400">Health City, HC 12345</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 mt-8 border-t border-neutral-800 text-center text-neutral-400">
+        <p>&copy; 2024 NutriTrack. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+</htmlCode>
